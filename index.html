@@ -14,38 +14,86 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <header  id="header" style="display: flex;">
+    <header id="header" style="display: flex;">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg bg-light" id="nav-bar">
-        <a class="navbar-brand" href="#"><img id="header-img" src="images/microverse.png" style="width: 70px;" /></a>
-      
-      
-        <ul class="nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#header">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#features">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#pricing">Pricing</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    </header>
-    <section id="features">
-     <iframe id='video' width="320" height="240" src="https://www.youtube.com/embed/rnBrV4XukHc">
-     </iframe> 
-    </section>
-    <section id="pricing">
+          <a class="navbar-brand" href="#"
+            ><img
+              id="header-img"
+              src="images/microverse.png"
+              style="width: 70px;"
+          /></a>
 
+          <ul class="nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#header">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container form-container">
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <small id="emailHelp" class="form-text text-muted"
+          >Subscribe to our newsletter</small
+        >
+        <div class="form-group">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+            class="form-control"
+          />
+        </div>
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </div>
+
+    <section id="features">
+      <div class="container video-container py-5">
+        <iframe
+          id="video"
+          width="50%"
+          height="350px"
+          src="https://www.youtube.com/embed/rnBrV4XukHc"
+        >
+        </iframe>
+      </div>
     </section>
-    
-    <form action="https://www.freecodecamp.com/email-submit" id="form">
-      <input type="email" name="email" id="email" placeholder="Email" required>
-      <input type="submit" value="Submit" id="submit">
-    </form>
+    <section id="pricing" class='container d-flex card-deck'>
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </section>
 
     <!--
 
